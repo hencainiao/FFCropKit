@@ -183,7 +183,7 @@ class CropImageView: UIImageView {
         let nowH = clipRect.size.height
         switch orientation {
         case .left:
-            edge =  UIEdgeInsets.init(top: abs(nowx-orx!), left:orH! - abs(nowy - ory!)  - nowH , bottom:  abs(orW!) - abs(nowx-orx!) - nowW, right:abs(nowy - ory!))
+            edge = UIEdgeInsets.init(top: abs(nowx-orx!), left:orH! - abs(nowy - ory!)  - nowH , bottom: abs(orW!) - abs(nowx-orx!) - nowW , right: abs(nowy - ory!))
         case .right:
             edge =  UIEdgeInsets.init(top: abs(orW!) - abs(nowx-orx!) - nowW, left: abs(nowy - ory!), bottom: abs(nowx-orx!) , right: orH! - abs(nowy - ory!)  - nowH)
         case .up:
